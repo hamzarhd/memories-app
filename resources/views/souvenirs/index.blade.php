@@ -28,7 +28,7 @@
                                 <th scope="col"></th>
                             </tr></thead>
                             <tbody>
-                            @foreach($souvenirs as $souvenir)
+                            @foreach($souvenirs ?? '' as $souvenir)
                                 <tr>
                                     <td> {{$souvenir->name}} </td>
                                     <td> {{$souvenir->souvenir_date}}</td>

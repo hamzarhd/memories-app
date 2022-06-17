@@ -76,7 +76,7 @@ class UserController extends Controller
 
             if($user){
                 auth()->login($user);
-                return view('dashboard');
+                return view('welcome');
                 
             }else{
                 return response()->json([

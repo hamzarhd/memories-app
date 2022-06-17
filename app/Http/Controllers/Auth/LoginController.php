@@ -31,7 +31,7 @@ class LoginController extends Controller
     protected $redirectTo = RouteServiceProvider::HOME;
     public function login(Request $request){
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password ])) {
-            return view('dashboard');
+            return view('welcome');
 
         }
         else{
